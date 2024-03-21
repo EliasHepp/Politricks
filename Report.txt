@@ -1,0 +1,48 @@
+# Social Informatics of Large Language Models - Project Report
+
+Jakob Amann, 01/
+Elias Gabriel Heppner, 01/1244414
+Andri Rutschmann, 01/1246603
+
+# Introduction
+
+- here we motivate our project 
+	- cambridge analytica and possible manipulation of people via large scale fake content about political actors
+	- understanding gpt's understanding of political actors and their position regarding certain (well known) topics
+- do we maybe have some theoretical groundwork for this project? LLMs are able to correctly depict the world... something like that
+
+Explaining what we, as young  social data scientists, learn at university has probably never been as easy as it is today due to the viral fame of Large Language Models like ChatGPT. 'Well we just ask ChatGPT a bunch of questions and then analyse the respones.', is a hughely simplified answer, of course, but it conveys a general idea to all those that do not have the slightest clue what social data science might be about.
+Now, of course we are prompting ChatGPT for stuff like 'How to write a project report?' or 'Write the introduction to our SILLM project paper?'. We rather try to phrase requests that help us understand how LLMs see, understand, and interpret our society.
+Following this guideline the present report investigates how well GPT-4 understands the political stance of different German parliamentary politicians concerning three different political topics, of public interest: Migration, Covid-19, and the Ukraine War.
+In light of scandals like Cambridge Analytica we feel that vigilance against attacks on domecracy is of utmost importance. The influence of fake news and social media on people's political behaviour is well documented [cite]. We are not going to further investigate this phenomenon here but we want to take a closer look on the generation of fake content. Up until a few months ago, puplicly available LLMs have not been able to convincingly generate human-like content [cite]. With the introduction of GPT-3, GPT-3.5, and now GPT-4, though, we have reached levels of yet unseen quality in the output of LLMs.
+The power of (malicious) individuals using these resources towards their own goals has never been this potent. As we show in this report, generating convincing political content in the form of politicians' speeches, requires but access to OpenAI's ChatGPT-4 and some dedication towards the task. The potential to spread misinformation, that looks as though issued by democratically elected politicians, has thus increased manifold.
+Another reason, less focussed on politics and more towards the understanding of LLMs, motivates this project. We aim to gain insights on how well GPT-4 knows German politicians. How familiar is it with their political agendas and their stance on different political issues. Understanding this piece of the cake might further our overall understanding of LLMs and, therefore, assist us in finding safe ways of dealing with a technology, that threatens to overtake the classic Google Search as number one approach of finding information online.
+Using a selection of German parliamentary politicians from all six parties currently in parliament we prompt GPT-4 for speeches, mimicking the style and political stance of each individual politician regarding the topics of interest: Migration, Covid-19, and the Ukraine War. We then apply two different approaches to model the topics of these fake speeches. [here you guys have to write a short intro to each of your methods]. Using real speeches, given in parliament, we then compare the fakes to the originals, thereby gaining insights on GPT-4's workings.
+This report documents our approach. First, we focus on which data we used, how we processed it, and what methods we used to analyse the resulting data set. We then present the results of our project. Finally, we discuss these findings in light of our research interest. 
+
+# Data & Methods
+
+- here we name opendiscourse
+- we go into detail about manifestoberta and the PCA approach (do not forget citations! cite! cite! cite!)
+- we also highlight how we processed the data (speeches) and how we choose topics and key actors to investigate
+
+## Data Processing
+
+
+
+## Politician Selection
+
+
+# Results
+
+- some plots of the results and maybe some tables showing some cosine distances and overall 'similarity' of fake and original speeches (manifestobera scores)
+
+# Discussion
+
+- what can we conclude from our research? Is there a connection?
+- can we confirm/reject the functioning of our approaches (manifestoberta and PCA)
+- what might we infer about the workings of GPT based on our research
+
+# References
+
+- should get at least a few pages probably
