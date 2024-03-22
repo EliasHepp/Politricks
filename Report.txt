@@ -28,6 +28,8 @@ This report documents our approach. First, we focus on which data we used, how w
 
 ## Data Processing
 
+- regex topic filtering for the speeches is still missing!
+
 The opendiscourse speech data set contains a multitude of speeches, presumably every single speech given in German parliament dating back as far as 19XX [add year]. In some cases the data set is a bit to exhaustive for our purposes since it also includes questions and responses to individual speeches along with interjections and general anouncements of proceedings. Thus, the data set contains every speech we needed for our analysis but also quite a bit of noise which we were not interested in.
 First of all we started by removing speeches that were not given by members of parliament (lobby representatives, etc. [is that correct?]) and were held before 2014 [correct?]. [Elias add some stuff about what you did].
 After removing all non-politicians from the data set we took care of filtering the individual content. We used regular expressions in combination with a minimum token count to remove all data entries that did not document a speech. For the purpose of this analysis we defined a speech as a standalone piece of spoken opininon [does this make sense?]. More precisely, a speech is given by a single politician and does not need any context, given by others or the politican, to be valid and understandable. A question or interjection voiced as the result of some other contribution, for example, only makes sense in the context of the preceeding contribution. We would not classify this as a speech. On the other hand, a contribution that addresses the whole parliament, reflects the opinions and stance of an individual politician, and stands on its own without any context, is considered a speech.
@@ -37,7 +39,9 @@ Sometimes, for example, a politician would answer a preceeding speech by greetin
 
 ## Politician Selection
 
-In order to 
+In order to prompt GPT-4 for llm-generated speeches in the style of individual politicians we first had to come up with a selection of politicians. Ideally, we wanted each party to be represented by male and female politicians both well and less known to the public.
+
+In order to compare real speeches with llm-generated ones we had to exract the politicians' original speeches on each topic: migration, Covid-19, and Ukraine war. Selecting four politicians 
 
 # Results
 
