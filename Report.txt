@@ -28,10 +28,16 @@ This report documents our approach. First, we focus on which data we used, how w
 
 ## Data Processing
 
+The opendiscourse speech data set contains a multitude of speeches, presumably every single speech given in German parliament dating back as far as 19XX [add year]. In some cases the data set is a bit to exhaustive for our purposes since it also includes questions and responses to individual speeches along with interjections and general anouncements of proceedings. Thus, the data set contains every speech we needed for our analysis but also quite a bit of noise which we were not interested in.
+First of all we started by removing speeches that were not given by members of parliament (lobby representatives, etc. [is that correct?]) and were held before 2014 [correct?]. [Elias add some stuff about what you did].
+After removing all non-politicians from the data set we took care of filtering the individual content. We used regular expressions in combination with a minimum token count to remove all data entries that did not document a speech. For the purpose of this analysis we defined a speech as a standalone piece of spoken opininon [does this make sense?]. More precisely, a speech is given by a single politician and does not need any context, given by others or the politican, to be valid and understandable. A question or interjection voiced as the result of some other contribution, for example, only makes sense in the context of the preceeding contribution. We would not classify this as a speech. On the other hand, a contribution that addresses the whole parliament, reflects the opinions and stance of an individual politician, and stands on its own without any context, is considered a speech.
+Most of the time these contributions start by greeting the parliament members and the president of parliament and are rather lenghty in terms of word count. Using this pattern we constructed a regex filter that checks for different well established forms of greeting within the first one to two sentences of each contribution. We supplemented our regex by investigating the most common tokens in the first few sentences of all contributions and then manually added some of them to the filter. A very common way of referring to the other members of parliament in one's greeting, for example, is the use of "Kollegen" and "Kolleginnen" ("colleagues"). Using this regex filter we removed more than half of all contributions, shrinking the data set from 75,191 to 32,714 observations. This filter isn't perfect, though.
+Sometimes, for example, a politician would answer a preceeding speech by greeting the whole of parliament and then giving a short response to the speech. We, therefore, implemented a minimum token cutoff of 300 tokens and removed all contributions that did not make the cut.[Argumentation correct?] We choose this threshold of 300 tokens after analyzing the distribution of content length and finding that most contributions ranged somewhere between 400-1,000 tokens. By removing the ones below 300 tokens we removed about 3,000 of our total 32,714 contributions. After manually checking a random sample of the remaining contributions for content we were satisfied to retain the remaining contributions as speeches.
 
 
 ## Politician Selection
 
+In order to 
 
 # Results
 
