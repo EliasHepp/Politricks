@@ -39,9 +39,31 @@ Sometimes, for example, a politician would answer a preceeding speech by greetin
 
 ## Politician Selection
 
-In order to prompt GPT-4 for llm-generated speeches in the style of individual politicians we first had to come up with a selection of politicians. Ideally, we wanted each party to be represented by male and female politicians both well and less known to the public.
+In order to prompt GPT-4 for llm-generated speeches in the style of individual politicians we first had to come up with a selection of politicians. Ideally, we wanted each party to be represented by male and female politicians with both well and less known individuals. By themselves, these requirements would be pretty easily met but we also required the individual politicians to have held at least a few speeches concerning each topic. Otherwise comparing the llm-generated speeches to real ones would not have been possible.
+We settled for a minimum of four speeches per topic. So each politician viable for sampling had to have held at least four speeches concerning migration, Covid-19, and the Ukrain war respectively. The number of four speeches per topic was chosen due to the fact that it was quite hard to find sufficient politicians per party that gave more than four speeches per topic. Even with this cutoff criteria it was impossible to sample an even 50/50 male/female politicians from each party. It seems that, at least in regards to our three topics of interest, the speakers in parliament for the AfD, CDU/CSU, and FDP are mostly male.
+Still, we felt, that four speeches per topic would allow us to get a sufficiet estimate of the politicians real opinions and stance [is this a valid reason?]. Going lower than four speeches per politician and topic did not seem like a valid option. Estimating political opinion and stance from less than four speeches seemed unreasonable and imprecise.  
+Filtering for all politicians that gave at least four speeches per topic we then manually selected four politicians per party. Where possible, we sampled two male and two female politicians and also tried to select one rather well known as well as one less known politician per gender. The resulting sample of politicians consists of 24 politicians, four each for AfD, CDU/CSU, FDP, Grüne, SPD, and DIE LINKE. Of those 16 are male and 8 are female. As mentioned above for the AfD, CDU/CSU, and FDP no female politicans met our sampling criteria with the exception of one female CDU/CSU politician. The full list of sampled politicians can be found in table [cite table].
 
-In order to compare real speeches with llm-generated ones we had to exract the politicians' original speeches on each topic: migration, Covid-19, and Ukraine war. Selecting four politicians 
+[latex table]
+-----
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
+\begin{table}[]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+{\color[HTML]{000000} AfD}                      & {\color[HTML]{000000} CDU/CSU}                  & {\color[HTML]{000000} FDP}                      & {\color[HTML]{000000} Grüne}                    & {\color[HTML]{000000} SPD}                      & {\color[HTML]{000000} DIE LINKE}                \\ \hline
+\cellcolor[HTML]{34CDF9}{\color[HTML]{000000} } & \cellcolor[HTML]{000000}{\color[HTML]{000000} } & \cellcolor[HTML]{F8FF00}{\color[HTML]{000000} } & \cellcolor[HTML]{009901}{\color[HTML]{000000} } & \cellcolor[HTML]{FE0000}{\color[HTML]{000000} } & \cellcolor[HTML]{C242BB}{\color[HTML]{000000} } \\ \hline
+{\color[HTML]{000000} Alexander Gauland}        & {\color[HTML]{000000} Thorsten Frei}            & {\color[HTML]{000000} Thomas Hacker}            & {\color[HTML]{000000} Kathrin Göring Eckardt}   & {\color[HTML]{000000} Helge Lindh}              & {\color[HTML]{000000} Dietmar Bartsch}          \\ \hline
+{\color[HTML]{000000} Peter Boehringer}         & {\color[HTML]{000000} Alexander Dobrindt}       & {\color[HTML]{000000} Christian Lindner}        & {\color[HTML]{000000} Annalena Baerbock}        & {\color[HTML]{000000} Karl Heinz Brunner}       & {\color[HTML]{000000} Gesine Lötzsch}           \\ \hline
+{\color[HTML]{000000} Norbert Kleinwächter}     & {\color[HTML]{000000} Philipp Amthor}           & {\color[HTML]{000000} Konstantin Kuhle}         & {\color[HTML]{000000} Anton Hofreiter}          & {\color[HTML]{000000} Daniela De Ridder}        & {\color[HTML]{000000} Kathrin Vogler}           \\ \hline
+{\color[HTML]{000000} Götz Frömming}            & {\color[HTML]{000000} Andrea Lindholz}          & {\color[HTML]{000000} Stephan Thomae}           & {\color[HTML]{000000} Omid Nouripour}           & {\color[HTML]{000000} Rolf Mützenich}           & {\color[HTML]{000000} Heike Hänsel}             \\ \hline
+\end{tabular}
+\end{table}
+
+-----
 
 # Results
 
