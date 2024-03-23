@@ -21,3 +21,5 @@ data/opendiscourse/parliament_speeches_uncut.zip
 data/opendiscourse/kaggle_outputs/kaggle_outputs.zip
 data/opendiscourse/sub_speeches.zip
 *.pkl
+00_prompt_engeniering.ipynb
+05_prompt_engeniering.ipynb
