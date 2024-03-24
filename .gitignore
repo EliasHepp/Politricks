@@ -3,9 +3,12 @@
 *.gz
 *.zip
 
+data/kaggle_outputs/parliament_speeches_with_topics.pkl
+
 # opendiscourse
 speeches.pkl
 contributions_extended.pkl
 contributions_simplified.pkl
 parliament_speeches.pkl
 sub_speeches.pkl
+parliament_speeches_with_topics.pkl
