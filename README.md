@@ -10,16 +10,16 @@ The code directory contains the jupyter notebooks needed to recreate our project
 
 This docuemnts who was responsible for what parts of our final report:
 
-Introduction 			- Andri
-
-Data & Methods
-	Topic Selection 	- 
-	Speech Selection 	- Andri
-	Politician Selection 	- Andri
-	GPT-4 Prompting		- Andri
-	Placement Analysis	- Elias
-
-Results
-	Doc2Vec 		- Elias
-
-Discussion			- Elias, Jakob
+Introduction 			- Andri\
+\
+Data & Methods\
+	Topic Selection 	- \
+	Speech Selection 	- Andri\
+	Politician Selection 	- Andri\
+	GPT-4 Prompting		- Andri\
+	Placement Analysis	- Elias\
+\
+Results\
+	Doc2Vec 		- Elias\
+\
+Discussion			- Elias, Jakob\
