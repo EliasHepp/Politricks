@@ -13,14 +13,14 @@ This documents who was responsible for what parts of our final report:
 Introduction 			- Andri\
 \
 Data & Methods\
-	Topic Selection 	-
+	Topic Selection 	-\
 	Speech Selection 	- Andri, Jakob\
 	Politician Selection 	- Andri\
 	GPT-4 Prompting		- Andri\
 	Placement Analysis	- Elias, Jakob\
 \
 Results\
-	Manifestoberta		- Jakob
+	Manifestoberta		- Jakob\
 	Doc2Vec 		- Elias\
 \
 Discussion			- Elias, Jakob\
